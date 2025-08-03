@@ -28,12 +28,12 @@
                 <td>{{x.emp_id}}</td>
                 <td>{{x.emp_name}}</td>
                 <td>{{x.emp_dept}}</td>
-                <!-- <td>
-                    <a href="update/{{x.id}}"><button id="up">update</button></a>
+                <td>
+                    <a href="{% url 'update' x.id %}"><button id="up">update</button></a>
                 </td>
                 <td>
-                    <a href="delete/{{x.id}}"><button id="del">delete</button></a>
-                </td> -->
+                    <a href="{% url 'delete' x.id %}"><button id="del">delete</button></a>
+                </td>
             </tr>
             {% endfor %}
         </table>

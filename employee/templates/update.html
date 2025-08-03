@@ -12,15 +12,15 @@
 
 <body>
     <div class="container2">
-        <h1>Update Member</h1>
-        <form action="{% url 'uprec' mem.id %}" method="post">
+        <h1>Update Employee</h1>
+        <form action="{% url 'update_emp' employee.id %}" method="post">
             {% csrf_token %}
-            <label for="">First name</label><br><br>
-            <input type="text" name="first" value="{{mem.firstname}}"><br><br>
-            <label for="">Last name</label><br><br>
-            <input type="text" name="last" value="{{mem.lastname}}"><br><br>
-            <label for="">Country</label><br><br>
-            <input type="text" name="country" value="{{mem.country}}"><br><br>
+            <label for="">Emp Id</label><br><br>
+            <input type="text" name="emp_id" value="{{employee.emp_id}}"><br><br>
+            <label for="">Emp name</label><br><br>
+            <input type="text" name="emp_name" value="{{employee.emp_name}}"><br><br>
+            <label for="">Emp dept</label><br><br>
+            <input type="text" name="emp_dept" value="{{employee.emp_dept}}"><br><br>
             <button type="submit" id="new1">Update</button>
         </form>
 

@@ -24,7 +24,7 @@ def create_emp(request):
 
 def update_view(request, id):
     employee = get_object_or_404(Employee, id=id)
-    return render(request, "update.html", {employee: employee})
+    return render(request, "update.html", {'employee': employee})
 
 def update_emp(request, id):
     employee = get_object_or_404(Employee, id=id)
