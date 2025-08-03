@@ -5,7 +5,7 @@ from employee.models import Employee
 
 def home(request):
     Employees = Employee.objects.all()
-    return render(request, "home.html", { 'Employees': Employees})
+    return render(request, "home.html", { 'employees': Employees})
 
 def create_view(request):
     return render(request, "create.html")
